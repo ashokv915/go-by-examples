@@ -29,6 +29,10 @@ func main() {
 
 	t := []int{1,2,3,4,5}
 	fmt.Println("dcl:", t)
+	t = append(t, 6,7)
+
+	fmt.Println("len:", len(t))
+	fmt.Println("cap:", cap(t))
 
 	twoD := make([][]int, 3)
 	for i:=0; i<3; i++ {
